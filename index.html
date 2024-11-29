@@ -1,0 +1,32 @@
+
+
+<!-- //JSON =javascript object  notation
+//it is a lightweight data exchange b/w to systems -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="frm">
+      <input type="text" id="ip1" value=""/>
+      <input type="password" id="ip2" value=""/>
+      <button>submit</button>
+    </form>
+
+    <script>
+      let form = document.getElementById("frm");
+      let ip1 = document.getElementById("ip1");
+      let ip2 = document.getElementById("ip2");
+      form.addEventListener("submit", () => {
+        localStorage.setItem("username", ip1.value);
+        localStorage.setItem("password", ip2.value);
+      //  let obj1 = { username: ip1.value, password: ip2.value };
+      //  localStorage.setItem("username", JSON.stringify(obj1));
+      
+        
+      });
+      </script>
+  
